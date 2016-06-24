@@ -1,0 +1,8 @@
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Release\DAO.dll.config
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Release\DAO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Release\DAO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Release\TO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Release\TO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Release\DAO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Release\DAO.pdb

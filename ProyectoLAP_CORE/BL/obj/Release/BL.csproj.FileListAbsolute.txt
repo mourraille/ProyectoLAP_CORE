@@ -1,0 +1,9 @@
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\bin\Release\BL.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\bin\Release\BL.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\bin\Release\DAO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\bin\Release\TO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\bin\Release\DAO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\bin\Release\TO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\obj\Release\BL.csprojResolveAssemblyReference.cache
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\obj\Release\BL.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\obj\Release\BL.pdb

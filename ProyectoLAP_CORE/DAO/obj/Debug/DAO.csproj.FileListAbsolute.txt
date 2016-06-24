@@ -1,0 +1,16 @@
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\DAO.dll.config
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\DAO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\DAO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\TO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\TO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Debug\DAO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Debug\DAO.pdb
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\DAO.dll.config
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\DAO.dll
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\DAO.pdb
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\TO.dll
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\bin\Debug\TO.pdb
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Debug\DAO.dll
+C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\DAO\obj\Debug\DAO.pdb

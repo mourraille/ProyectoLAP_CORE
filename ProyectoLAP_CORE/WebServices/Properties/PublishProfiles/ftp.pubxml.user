@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://waws-prod-sn1-039.ftp.azurewebsites.windows.net/site/wwwroot/site\wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/BL.dll">
+      <publishTime>06/22/2016 07:20:52</publishTime>
+    </File>
+    <File Include="bin/DAO.dll">
+      <publishTime>06/22/2016 07:20:52</publishTime>
+    </File>
+    <File Include="bin/TO.dll">
+      <publishTime>06/22/2016 07:20:52</publishTime>
+    </File>
+    <File Include="bin/WebServices.dll">
+      <publishTime>06/22/2016 07:20:53</publishTime>
+    </File>
+    <File Include="RogersWS.svc">
+      <publishTime>06/16/2016 15:13:02</publishTime>
+    </File>
+    <File Include="Rogers_API.asmx">
+      <publishTime>06/22/2016 00:19:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/22/2016 07:28:33</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

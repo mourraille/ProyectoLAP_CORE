@@ -1,0 +1,12 @@
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\WebServices.dll.config
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\WebServices.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\WebServices.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\BL.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\TO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\DAO.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\BL.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\TO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\bin\DAO.pdb
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\obj\Release\WebServices.csprojResolveAssemblyReference.cache
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\obj\Release\WebServices.dll
+C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\obj\Release\WebServices.pdb
