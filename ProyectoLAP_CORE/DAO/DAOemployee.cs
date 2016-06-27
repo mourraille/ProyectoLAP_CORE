@@ -92,12 +92,30 @@ namespace DAO
             }
         }
 
+        public Boolean deletePerson(string personid) {
+            SqlCommand com = new SqlCommand("DELETE FROM PERSON WHERE PERSON.PERSON_ID=@param",DAOConnection.getConnectionInstance());
+            com.Parameters.AddWithValue("@param", personid);
+            try
+            {
+                DAOConnection.getConnectionInstance().Open();
+                com.ExecuteNonQuery();
+                DAOConnection.getConnectionInstance().Close();
+                return true;
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+
+        }
+
         public List<TOemployee> searchEmployee(string filter)
         {
 
             try
             {
-                SqlCommand com = new SqlCommand("select EMPLOYEE.USERNAME , EMPLOYEE.ISADMINISTRATOR, person.FULLNAME from EMPLOYEE join PERSON on EMPLOYEE.PERSON_ID = PERSON.PERSON_ID WHERE person.FULLNAME like '" + filter + "%' or EMPLOYEE.USERNAME like '" + filter + "%'", DAOConnection.getConnectionInstance());
+                SqlCommand com = new SqlCommand("select EMPLOYEE.USERNAME , EMPLOYEE.ISADMINISTRATOR, person.FULLNAME, person.PERSON_ID, person.Password from EMPLOYEE join PERSON on EMPLOYEE.PERSON_ID = PERSON.PERSON_ID WHERE person.FULLNAME like '" + filter + "%' or EMPLOYEE.USERNAME like '" + filter + "%'", DAOConnection.getConnectionInstance());
                 DAOConnection.getConnectionInstance().Open();
                 SqlDataAdapter adapter = new SqlDataAdapter();
                 adapter.SelectCommand = com;
@@ -108,7 +126,7 @@ namespace DAO
                 foreach (DataRow item in dt.Rows)
                 {
 
-                    list.Add(new TOemployee((item["USERNAME"].ToString()), ((Boolean)item["ISADMINISTRATOR"]), (item["FULLNAME"]).ToString()));
+                    list.Add(new TOemployee(item[0].ToString(), Boolean.Parse(item[1].ToString()),item[2].ToString(),int.Parse(item[3].ToString()),item[4].ToString()));
                 }
                 return list;
 

@@ -49,18 +49,14 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public Boolean deleteEmployee(String username) {
-            return new RogersWS().WSdeleteEmployee(username);
-        }
-        [WebMethod]
-        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public Boolean updateEmployee(string fullname, string password, string username, bool isadmin) {
             return new RogersWS().WSupdateEmployee(fullname,password,username, isadmin);
         }
+
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public List<Employee> searchEmployee(string filter) {
-            return new RogersWS().WSfindEmployee(filter);
+        public String searchEmployee(string filter) {
+            return new JavaScriptSerializer().Serialize( new RogersWS().WSfindEmployee(filter));
         }
 
         [WebMethod]
@@ -71,8 +67,8 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public List<OrderState> searchOrderStates() {
-            return new RogersWS().WSgetOrderStates();
+        public string searchOrderStates() {
+            return new JavaScriptSerializer().Serialize(new RogersWS().WSgetOrderStates());
         }
 
         [WebMethod]
@@ -93,8 +89,8 @@ namespace WebServices
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public List<Product> searchProduct(string productname) {
-            return new RogersWS().WSsearchProduct(productname);
+        public String searchProduct(string productname) {
+            return new JavaScriptSerializer().Serialize(new RogersWS().WSsearchProduct(productname));
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
@@ -111,6 +107,13 @@ namespace WebServices
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         List<Order> searchOrders(string id) {
             return new RogersWS().WSsearchOrders(id);
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public bool deletePerson(string person_id)
+        {
+            return new RogersWS().WSdeletePerson(person_id);
         }
 
     }

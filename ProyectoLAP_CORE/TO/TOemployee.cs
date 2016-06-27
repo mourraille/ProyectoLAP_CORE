@@ -18,11 +18,13 @@ namespace TO
             this.PASSWORD = password;
         }
 
-        public TOemployee(string username, bool isadmin , string fullname)
+        public TOemployee(string username, bool isadmin , string fullname, int personid, string password)
         {
+            this.PERSON_ID = personid;
             this.FULLNAME = fullname;
             this.USERNAME = username;
             this.isADMIN = isadmin;
+            this.PASSWORD = password;
         }
 
         public TOemployee() { }
