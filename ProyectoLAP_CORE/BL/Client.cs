@@ -42,7 +42,7 @@ namespace BL
         }
 
         public Boolean updateBasicData(string fullname, string address, string password, string email) {
-            Encryptor.MD5Hash(password);
+            password = Encryptor.MD5Hash(password);
             return new DAOclient().updateBasicData(fullname, address, password, email);
         }
 
