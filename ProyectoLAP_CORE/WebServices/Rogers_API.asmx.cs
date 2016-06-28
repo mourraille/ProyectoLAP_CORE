@@ -135,12 +135,12 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public bool addproductJSON(string productname, string description, double price, string image, bool isoutofstoc, int category) {
+        public bool addproductJSON(string productname, string description, double price, string image, bool isoutofstoc, string category) {
             return new RogersWS().WSaddproduct(productname, description, price, image, isoutofstoc, category);
         }
 
         [WebMethod]
-        public bool addproductSOAP(string productname, string description, double price, string image, bool isoutofstoc, int category)
+        public bool addproductSOAP(string productname, string description, double price, string image, bool isoutofstoc, string category)
         {
             return new RogersWS().WSaddproduct(productname, description, price, image, isoutofstoc, category);
         }
@@ -171,12 +171,12 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public bool updateProductJSON(int id, string name, string descr, double price, string imageuri, int stock, int cat) {
+        public bool updateProductJSON(int id, string name, string descr, double price, string imageuri, int stock, string cat) {
             return new RogersWS().WSupdateProduct(id, name, descr, price, imageuri,stock, cat);
         }
 
         [WebMethod]
-        public bool updateProductSOAP(int id, string name, string descr, double price, string imageuri, int stock, int cat)
+        public bool updateProductSOAP(int id, string name, string descr, double price, string imageuri, int stock, string cat)
         {
             return new RogersWS().WSupdateProduct(id, name, descr, price, imageuri, stock, cat);
         }
