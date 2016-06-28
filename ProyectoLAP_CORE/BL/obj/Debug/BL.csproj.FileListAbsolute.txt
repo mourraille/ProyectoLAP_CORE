@@ -16,3 +16,12 @@ C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\bin\
 C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
 C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\obj\Debug\BL.dll
 C:\Users\mmourraille\Desktop\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\BL\obj\Debug\BL.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\bin\Debug\BL.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\bin\Debug\BL.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\bin\Debug\DAO.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\bin\Debug\TO.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\bin\Debug\DAO.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\bin\Debug\TO.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\obj\Debug\BL.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\BL\obj\Debug\BL.pdb

@@ -11,6 +11,7 @@ namespace WebServices
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
+
     public class RogersWS : RogersIWS
     {
         public List<Client> WSgetAllClients(String filter) 
@@ -34,10 +35,7 @@ namespace WebServices
               return new Client().changeState(state, email);
         }
 
-        public bool WSdeleteEmployee(string username)
-        {
-            return new Employee().deleteEmployee(username);
-        }
+
 
         public bool WSupdateEmployee(string fullname, string password, string username, bool isadmin)
         {
@@ -93,6 +91,11 @@ namespace WebServices
         public List<Order> WSsearchOrders(string id)
         {
             return new Order().searchOrders(id);
+        }
+
+        public bool WSdeletePerson(string id)
+        {
+            return new Employee().deletePERSON(id);
         }
     }
 }

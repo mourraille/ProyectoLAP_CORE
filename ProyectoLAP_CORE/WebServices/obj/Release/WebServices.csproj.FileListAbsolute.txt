@@ -10,3 +10,15 @@ C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\Web
 C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\obj\Release\WebServices.csprojResolveAssemblyReference.cache
 C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\obj\Release\WebServices.dll
 C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\WebServices\obj\Release\WebServices.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\WebServices.dll.config
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\WebServices.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\WebServices.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\BL.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\TO.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\DAO.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\BL.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\TO.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\bin\DAO.pdb
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\obj\Release\WebServices.csprojResolveAssemblyReference.cache
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\obj\Release\WebServices.dll
+C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\WebServices\obj\Release\WebServices.pdb
