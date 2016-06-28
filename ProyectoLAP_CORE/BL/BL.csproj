@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Client.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Encryptor.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderState.cs" />
     <Compile Include="Person.cs" />

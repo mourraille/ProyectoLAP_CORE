@@ -30,6 +30,7 @@ namespace BL
         public Employee() { }
 
         public Boolean addEmployee(string fullname, string password, string username,Boolean isadmin) {
+            Encryptor.MD5Hash(password);
             return new DAOemployee().addEmployee(fullname,password,username, isadmin);
         }
 
@@ -38,6 +39,7 @@ namespace BL
         }
 
         public Boolean updateEmployee(string fullname, string password, string username, Boolean isadmin) {
+            Encryptor.MD5Hash(password);
             return new DAOemployee().updateEmployee( fullname,  password,  username,  isadmin);
         }
 
