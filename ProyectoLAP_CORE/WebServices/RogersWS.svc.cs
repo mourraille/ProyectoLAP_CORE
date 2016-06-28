@@ -62,7 +62,7 @@ namespace WebServices
             return new OrderState().setTime(id,time);
         }
 
-        public bool WSaddproduct(string productname, string description, double price, string image, bool isoutofstoc, int category)
+        public bool WSaddproduct(string productname, string description, double price, string image, bool isoutofstoc, string category)
         {
             return new Product().addproduct(productname, description, price, image, isoutofstoc, category);
 
@@ -78,7 +78,7 @@ namespace WebServices
             return new Product().searchProduct(productname);
         }
 
-        public bool WSupdateProduct(int id, string name, string descr, double price, string imageuri, int stock, int cat)
+        public bool WSupdateProduct(int id, string name, string descr, double price, string imageuri, int stock, string cat)
         {
             return new Product().updateProduct(id, name,descr,price,imageuri,stock,cat);
         }
