@@ -171,6 +171,19 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public String searchProductByIdJSON(string id)
+        {
+            return new JavaScriptSerializer().Serialize(new Product().searchProductById(int.Parse(id)));
+        }
+
+        [WebMethod]
+        public Product searchProductByIdSOAP(int id)
+        {
+            return new Product().searchProductById(id);
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
         public bool updateProductJSON(int id, string name, string descr, double price, string imageuri, int stock, string cat) {
             return new RogersWS().WSupdateProduct(id, name, descr, price, imageuri,stock, cat);
         }
