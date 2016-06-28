@@ -10,15 +10,3 @@ C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\con
 C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\console testing\obj\Debug\CONSOLE_(RUN TESTS HERE).csprojResolveAssemblyReference.cache
 C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\console testing\obj\Debug\console testing.exe
 C:\Users\mmourraille\Desktop\Git\DATA_ARCHITECTURE_LAP\DATA_ARCHITECTURE_LAP\console testing\obj\Debug\console testing.pdb
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\console testing.exe.config
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\console testing.exe
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\console testing.pdb
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\BL.dll
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\DAO.dll
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\TO.dll
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\BL.pdb
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\DAO.pdb
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\bin\Debug\TO.pdb
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\obj\Debug\CONSOLE_(RUN TESTS HERE).csprojResolveAssemblyReference.cache
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\obj\Debug\console testing.exe
-C:\Users\mmourraille\Desktop\Git\ProyectoLAP_CORE\ProyectoLAP_CORE\console testing\obj\Debug\console testing.pdb
