@@ -36,16 +36,18 @@ namespace BL
         public Client() { }
         public Boolean addClient(string fullname, string password, string profilepictureurl, string email,string address)
         {
+            Encryptor.MD5Hash(password);
             return new DAOclient().addClient(fullname, password,profilepictureurl,email,address);
 
         }
 
         public Boolean updateBasicData(string fullname, string address, string password, string email) {
+            Encryptor.MD5Hash(password);
             return new DAOclient().updateBasicData(fullname, address, password, email);
         }
 
-        public bool changeState(Boolean state, string email) {
-            new DAOclient().changeState(email, state);
+        public bool changeState(Boolean state, int id) {
+            new DAOclient().changeState(id, state);
             return true;
         }
 

@@ -16,9 +16,9 @@ namespace BL
         public Double PRICE { get; set; }
         public String IMAGEURI { get; set; }
         public Boolean isoutofstock { get; set; }
-        public int category { get; set; }
+        public string category { get; set; }
 
-        public Product(int prodid, string productname, string description, Double price, string image, Boolean isoutofstock, int cat)
+        public Product(int prodid, string productname, string description, Double price, string image, Boolean isoutofstock, string cat)
         {
             this.PRODUCT_ID = prodid;
             this.PRODUCTNAME = productname;
@@ -33,7 +33,7 @@ namespace BL
         public Product() { }
 
 
-        public bool addproduct(string productname, string description, double price, string image, Boolean isoutofstoc, int category)
+        public bool addproduct(string productname, string description, double price, string image, Boolean isoutofstoc, string category)
         {
             return new DAOproduct().addProduct(productname, description, price, image, category);
         }
@@ -52,10 +52,15 @@ namespace BL
             return prods;
         }
 
-        public Boolean updateProduct(int id, string name, string descr, double price, string imageuri, int stock, int cat) 
+        public Boolean updateProduct(int id, string name, string descr, double price, string imageuri, int stock, string cat) 
         {
             return new DAOproduct().updateProduct(id, name, descr, price , imageuri, stock, cat);
-             
+        }
+
+        public bool changeState(int id, bool state)
+        {
+            new DAOproduct().changeProductState(id, state);
+            return true;
         }
     }
 }

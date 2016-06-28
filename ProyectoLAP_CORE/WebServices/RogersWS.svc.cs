@@ -30,9 +30,9 @@ namespace WebServices
             return new Client().updateBasicData(fullname, address, password, email);
         }
 
-        public Boolean WSchangeState(bool state, string email)
+        public Boolean WSchangeState(int id, bool state)
         {
-              return new Client().changeState(state, email);
+              return new Client().changeState(state, id);
         }
 
 
