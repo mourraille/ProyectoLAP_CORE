@@ -46,8 +46,8 @@ namespace BL
             return new DAOclient().updateBasicData(fullname, address, password, email);
         }
 
-        public bool changeState(Boolean state, string email) {
-            new DAOclient().changeState(email, state);
+        public bool changeState(Boolean state, int id) {
+            new DAOclient().changeState(id, state);
             return true;
         }
 

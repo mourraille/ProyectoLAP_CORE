@@ -14,9 +14,9 @@ namespace TO
         public Double PRICE { get; set; }
         public String IMAGEURI { get; set; }
         public Boolean isoutofstock { get; set; }
-        public int category { get; set; }
+        public string category { get; set; }
 
-        public TOproduct(int prodid, string productname, string description, Double price, string image, Boolean isoutofstock,int cat)
+        public TOproduct(int prodid, string productname, string description, Double price, string image, Boolean isoutofstock, string cat)
         {
             this.PRODUCT_ID = prodid;
             this.PRODUCTNAME = productname;

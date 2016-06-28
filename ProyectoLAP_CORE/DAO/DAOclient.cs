@@ -58,15 +58,7 @@ namespace DAO
             }
         }
 
-        public void changeState(string email, bool state) {
-            SqlCommand com = new SqlCommand("update client set client.ISACTIVEUSER= @isactive where client.EMAIL = @email", DAOConnection.getConnectionInstance());
-            com.Parameters.AddWithValue("@isactive", state);
-            com.Parameters.AddWithValue("@email", email);
-            DAOConnection.getConnectionInstance().Open();
-            com.ExecuteNonQuery();
-            DAOConnection.getConnectionInstance().Close();
-
-        }
+       
 
         public List<TOclient> getClients(string filter) {
 
@@ -93,8 +85,27 @@ namespace DAO
 
                 return null;
             }
-       
+        }
 
+        public Boolean changeState(int id, bool enabled)
+        {
+            try
+            {
+                SqlCommand com = new SqlCommand("EXECUTE  [dbo].[ChangeClientState] @id = @clientid, @bool = @enabled", DAOConnection.getConnectionInstance());
+
+                com.Parameters.AddWithValue("@clientid", id);
+                com.Parameters.AddWithValue("@enabled", enabled);
+                DAOConnection.getConnectionInstance().Open();
+                com.ExecuteNonQuery();
+
+                DAOConnection.getConnectionInstance().Close();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
 

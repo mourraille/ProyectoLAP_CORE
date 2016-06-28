@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Script.Serialization;
 using System.Web.Script.Services;
 using System.Web.Services;
+using BL;
 
 namespace WebServices
 {
@@ -62,16 +63,14 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public Boolean changeStateJSON(Boolean state, string email) {
-            return new RogersWS().WSchangeState(state, email);
-
+        public Boolean changeStateJSON(int id, Boolean state) {
+            return new RogersWS().WSchangeState(id, state);
         }
 
         [WebMethod]
-        public Boolean changeStateSOAP(Boolean state, string email)
+        public Boolean changeStateSOAP(int id, Boolean state)
         {
-            return new RogersWS().WSchangeState(state, email);
-
+            return new RogersWS().WSchangeState(id, state);
         }
 
         [WebMethod]
@@ -218,6 +217,34 @@ namespace WebServices
         {
             return new RogersWS().WSdeletePerson(person_id);
         }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public Boolean changeProductStateJSON(int id, Boolean state)
+        {
+            return new Product().changeState(id, state);
+        }
+
+        [WebMethod]
+        public Boolean changeProductStateSOAP(int id, Boolean state)
+        {
+            return new Product().changeState(id, state);
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public Boolean verifyPasswordJSON(int id, string password)
+        {
+            return new UserVerification().verifyPassword(id, password);
+        }
+
+        [WebMethod]
+        public Boolean verifyPasswordSOAP(int id, string password)
+        {
+            return new UserVerification().verifyPassword(id, password);
+        }
+
+
 
     }
 }

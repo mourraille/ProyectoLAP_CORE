@@ -12,7 +12,7 @@ namespace DAO
   public  class DAOproduct
     {
 
-        public Boolean addProduct(string productname, string description, Double price, string image, int category) {
+        public Boolean addProduct(string productname, string description, Double price, string image, string category) {
             try
             {
                 SqlCommand com = new SqlCommand("EXECUTE  [dbo].[addProduct] @name,@descr,@price,@category,@image", DAOConnection.getConnectionInstance());
@@ -48,7 +48,7 @@ namespace DAO
                 List<TOproduct> list = new List<TOproduct>();
                 foreach (DataRow item in dt.Rows)
                 { var stock = bool.Parse(item[5].ToString());
-                    list.Add(new TOproduct(int.Parse(item[0].ToString()), item[1].ToString(), item[2].ToString(), double.Parse(item[3].ToString()), item[4].ToString(), stock, int.Parse(item[6].ToString())));
+                    list.Add(new TOproduct(int.Parse(item[0].ToString()), item[1].ToString(), item[2].ToString(), double.Parse(item[3].ToString()), item[4].ToString(), stock, item[6].ToString()));
                 }
                 return list;
             }
@@ -61,7 +61,7 @@ namespace DAO
         }
 
 
-        public Boolean updateProduct(int id, string name, string descr, double price, string imageuri, int stock , int cat) {
+        public Boolean updateProduct(int id, string name, string descr, double price, string imageuri, int stock , string cat) {
             try
             {
 
@@ -85,8 +85,6 @@ namespace DAO
             }
             catch (Exception)
             {
-
-
                 return false;
             }
 
@@ -106,9 +104,27 @@ namespace DAO
             {
                 return false;
             }
+        }
 
+        public Boolean changeProductState(int id, bool stock)
+        {
+            try
+            {
+                SqlCommand com = new SqlCommand("EXECUTE  [dbo].[ChangeProductState] @id = @prodid, @bool = @prodstock", DAOConnection.getConnectionInstance());
 
+                com.Parameters.AddWithValue("@prodid", id);
+                com.Parameters.AddWithValue("@prodstock", stock);
+                DAOConnection.getConnectionInstance().Open();
+                com.ExecuteNonQuery();
 
+                DAOConnection.getConnectionInstance().Close();
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
     }
