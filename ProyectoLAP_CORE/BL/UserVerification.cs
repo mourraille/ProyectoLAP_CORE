@@ -11,7 +11,7 @@ namespace BL
     {
         public bool verifyPassword(int id, string password)
         {
-            return new DAOUserVerification().userVerification(id, password);
+            return new DAOUserVerification().userVerification(id, Encryptor.MD5Hash(password));
         }
     }
 }

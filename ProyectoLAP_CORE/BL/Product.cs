@@ -52,6 +52,16 @@ namespace BL
             return prods;
         }
 
+        public Product searchProductById(int id)
+        {
+            var ToProduct = new DAOproduct().searchProductById(id);
+            if (ToProduct != null)
+            {
+               return new Product(ToProduct.PRODUCT_ID, ToProduct.PRODUCTNAME, ToProduct.DESCRIPTION, ToProduct.PRICE, ToProduct.IMAGEURI, ToProduct.isoutofstock, ToProduct.category);
+            }
+            return null;
+        }
+
         public Boolean updateProduct(int id, string name, string descr, double price, string imageuri, int stock, string cat) 
         {
             return new DAOproduct().updateProduct(id, name, descr, price , imageuri, stock, cat);

@@ -35,8 +35,9 @@ namespace DAO
         }
 
         public List<TOproduct> searchProducts(String name) {
-            SqlCommand com = new SqlCommand("SELECT * FROM PRODUCT WHERE PRODUCT.PRODUCTNAME LIKE '"+name+"%'", DAOConnection.getConnectionInstance());
-
+            SqlCommand com = new SqlCommand("searchProduct", DAOConnection.getConnectionInstance());
+            com.CommandType = System.Data.CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@param", name);
             try
             {
                 DataTable dt = new DataTable();
@@ -55,7 +56,41 @@ namespace DAO
             catch (Exception)
             {
                 return null;
-               
+            }
+
+        }
+
+        public TOproduct searchProductById(int id)
+        {
+            SqlCommand com = new SqlCommand("searchProductById", DAOConnection.getConnectionInstance());
+            com.CommandType = System.Data.CommandType.StoredProcedure;
+            com.Parameters.AddWithValue("@param", id);
+            try
+            {
+                SqlDataReader reader;
+                
+
+                reader = com.ExecuteReader();
+                TOproduct platillo = null;
+
+                if (reader.Read())
+                {
+                    platillo = new TOproduct
+                    {
+                        PRODUCT_ID = int.Parse(reader["PRODUCT_ID"].ToString()),
+                        PRODUCTNAME = reader["PRODUCTNAME"].ToString(),
+                        DESCRIPTION = reader["DESCRIPTION"].ToString(),
+                        PRICE = double.Parse(reader["PRICE"].ToString()),
+                        IMAGEURI = reader["IMAGEURI"].ToString(),
+                        isoutofstock = bool.Parse(reader["ISOUTOFSTOCK"].ToString()),
+                        category = reader["CATEGORY"].ToString()
+                    };
+                }
+                return platillo;
+            }
+            catch (Exception)
+            {
+                return null;
             }
 
         }
