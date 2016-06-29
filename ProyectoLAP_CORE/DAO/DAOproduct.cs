@@ -60,7 +60,7 @@ namespace DAO
 
         }
 
-        public TOproduct searchProductById(int id)
+        public TOproduct searchProductById(string id)
         {
             SqlCommand com = new SqlCommand("searchProductById", DAOConnection.getConnectionInstance());
             com.CommandType = System.Data.CommandType.StoredProcedure;

@@ -52,7 +52,7 @@ namespace BL
             return prods;
         }
 
-        public Product searchProductById(int id)
+        public Product searchProductById(string id)
         {
             var ToProduct = new DAOproduct().searchProductById(id);
             if (ToProduct != null)

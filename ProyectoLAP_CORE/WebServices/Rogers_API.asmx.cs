@@ -159,8 +159,9 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public String searchProductJSON(string productname) {
-            return new JavaScriptSerializer().Serialize(new RogersWS().WSsearchProduct(productname));
+        public void searchProductJSON(string productname) {
+
+         Context.Response.Write( new JavaScriptSerializer().Serialize(new RogersWS().WSsearchProduct(productname)));
         }
 
         [WebMethod]
@@ -171,13 +172,13 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public String searchProductByIdJSON(string id)
+        public void searchProductByIdJSON(string id)
         {
-            return new JavaScriptSerializer().Serialize(new Product().searchProductById(int.Parse(id)));
+            Context.Response.Write(new JavaScriptSerializer().Serialize(new Product().searchProductById(id)));
         }
 
         [WebMethod]
-        public Product searchProductByIdSOAP(int id)
+        public Product searchProductByIdSOAP(string id)
         {
             return new Product().searchProductById(id);
         }

@@ -61,7 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="RogersWS.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Rogers_API.asmx" />
   </ItemGroup>
   <ItemGroup>
