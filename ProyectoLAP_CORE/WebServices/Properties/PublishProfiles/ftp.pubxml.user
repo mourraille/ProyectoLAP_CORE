@@ -11,25 +11,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/BL.dll">
-      <publishTime>06/22/2016 07:20:52</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/DAO.dll">
-      <publishTime>06/22/2016 07:20:52</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/TO.dll">
-      <publishTime>06/22/2016 07:20:52</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/WebServices.dll">
-      <publishTime>06/22/2016 07:20:53</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="RogersWS.svc">
-      <publishTime>06/16/2016 15:13:02</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Rogers_API.asmx">
-      <publishTime>06/22/2016 00:19:39</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/22/2016 07:28:33</publishTime>
+      <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
   </ItemGroup>
 </Project>
