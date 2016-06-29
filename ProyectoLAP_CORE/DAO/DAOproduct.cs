@@ -67,6 +67,7 @@ namespace DAO
             com.Parameters.AddWithValue("@param", id);
             try
             {
+                DAOConnection.getConnectionInstance().Open();
                 SqlDataReader reader;
                 
 
@@ -86,6 +87,7 @@ namespace DAO
                         category = reader["CATEGORY"].ToString()
                     };
                 }
+                DAOConnection.getConnectionInstance().Close();
                 return platillo;
             }
             catch (Exception)
