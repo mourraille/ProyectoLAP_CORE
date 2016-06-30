@@ -27,7 +27,6 @@ namespace DAO
                  com = new SqlCommand("UPDATE [dbo].[CLIENT] SET [ADDRESSS] = @coords WHERE client.person_id = @id", DAOConnection.getConnectionInstance());
                 com.Parameters.AddWithValue("@coords",coord);
                 com.Parameters.AddWithValue("@id", id);
-
                 DAOConnection.getConnectionInstance().Open();
                 com.ExecuteNonQuery();
                 DAOConnection.getConnectionInstance().Close();
