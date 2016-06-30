@@ -83,14 +83,14 @@ namespace WebServices
             return new Product().updateProduct(id, name,descr,price,imageuri,stock,cat);
         }
 
-        public bool WSaddOrder(int id, List<Product> prods)
+        public bool WSaddOrder(string email,String prods, double total,string coordinates)
         {
-            return new Order().addOrder(id, prods);
+            return new Order().addOrder(email, prods,total,coordinates);
         }
 
-        public List<Order> WSsearchOrders(string id)
-        {
-            return new Order().searchOrders(id);
+        public List<Order> WSsearchOrders()
+        { 
+            return new Order().searchOrders();
         }
 
         public bool WSdeletePerson(string id)

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAO;
+using BL;
 
 namespace console_testing
 {
@@ -20,7 +21,7 @@ namespace console_testing
             //Console.WriteLine(new DAOproduct().searchProducts("a").ElementAt(0).DESCRIPTION);
             //Console.WriteLine(new DAOproduct().deleteProd(10));
             //Console.WriteLine(new DAOproduct().updateProduct(3,"ENCHILADAS","DESCRIP",500,"IMAGE",0,2));
-        
+            new Order().searchOrders();
             Console.ReadLine();
 
 

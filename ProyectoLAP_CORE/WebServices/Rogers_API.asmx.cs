@@ -197,26 +197,26 @@ namespace WebServices
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public bool addOrderJSON(int id, List<Product> prods) {
-            return new RogersWS().WSaddOrder(id, prods);
+        public void addOrderJSON(string email, String prods, double total,string coordenates) { 
+             new RogersWS().WSaddOrder(email, prods, total,coordenates);
         }
 
         [WebMethod]
-        public bool addOrderSOAP(int id, List<Product> prods)
+        public void addOrderSOAP(int id, String prods,double total)
         {
-            return new RogersWS().WSaddOrder(id, prods);
+          
         }
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public string searchOrdersJSON(string id) {
-            return new JavaScriptSerializer().Serialize(new RogersWS().WSsearchOrders(id));
+        public void searchOrdersJSON() {
+            Context.Response.Write( new JavaScriptSerializer().Serialize(new RogersWS().WSsearchOrders()));
         }
 
         [WebMethod]
-         public List<Order> searchOrdersSOAP(string id)
+         public List<Order> searchOrdersSOAP()
         {
-            return new RogersWS().WSsearchOrders(id);
+            return new RogersWS().WSsearchOrders();
         }
 
         [WebMethod]

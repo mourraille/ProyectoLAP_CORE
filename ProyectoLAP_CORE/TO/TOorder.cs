@@ -9,7 +9,7 @@ namespace TO
     public class TOorder
     {
         public string ORDERID { get; set; }
-        public string ORDERSTATEID { get; set; }
+        public int ORDERSTATEID { get; set; }
         public DateTime DATETTIME { get; set; }
         public string FULLNAME { get; set; }
         public string PICTUREURL { get; set; }
@@ -19,7 +19,7 @@ namespace TO
         public List<TOproduct> TOproducts { get; set; }
         public TOorder() { }
 
-        public TOorder(string oRDERID, string oRDERSTATEID, DateTime dATETTIME, string fULLNAME, string pICTUREURL, string aDDRESS, string eMAIL, double tOTAL)
+        public TOorder(string oRDERID, int oRDERSTATEID, DateTime dATETTIME, string fULLNAME, string pICTUREURL, string aDDRESS, string eMAIL, double tOTAL)
         {
             ORDERID = oRDERID;
             ORDERSTATEID = oRDERSTATEID;

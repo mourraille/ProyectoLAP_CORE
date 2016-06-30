@@ -21,7 +21,7 @@ namespace WebServices
         [WebGet(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         Boolean WSaddClient(string fullname, string password, string profilepictureurl, string email, string address);
 
-
+        
         [OperationContract]
         [WebGet(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         Boolean WSupdateBasicData(string fullname, string address, string password, string email);
@@ -72,11 +72,12 @@ namespace WebServices
        
         [OperationContract]
         [WebGet(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-        List<Order> WSsearchOrders(string id);
+        List<Order> WSsearchOrders();
 
         [OperationContract]
         [WebGet(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         Boolean WSdeletePerson(string id);
+
 
     }
 }
